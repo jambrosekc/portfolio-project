@@ -8,36 +8,31 @@ body{
     font-family: var(--default-font-family);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
-    color: black;
+  h2 {
     font-family: var(--heading-font-family);
+    font-size: 64px;
     font-weight: bold;
+    line-height: 85px;
+    padding: 12px 20px;
   }
-  
   p {
     font-family: var(--default-font-family);
+    font-size: 18px;
     font-weight: normal;
+    line-height: 30px;
   }
-  
+
   .hero {
     background: var(--secondary-color);
     text-align: center;
     padding: 160px 20px;
-
   }
 
   .hero p {
-    font-family: var(--default-font-family);
     font-size: 36px;
     color: #272142;
     font-weight: bold;
     margin: 0;
-
   }
 
   .hero h1 {
@@ -62,5 +57,29 @@ h6{
     font-weight: medium;
     color: white;
     line-height: 27px;
-    padding:12px 20px;
+    padding:15px 30px;
   }
+  
+  .btn-branding-outline {
+    background: white;
+    font-family: var(--default-font-family);
+    font-size: 18px;
+    font-weight: medium;
+    color: var(--branding-color);
+    line-height: 27px;
+    padding:15px 30px;
+    border: 1px solid;
+    border-color: var(--branding-color);
+  }
+
+  .project-description{
+    padding: 120px 60px;
+  }
+
+  @media (max-width: 960px){
+    .project-description{
+      padding: 0;
+      text-align: center;
+    }
+  }
+
